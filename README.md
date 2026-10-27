@@ -21,9 +21,13 @@ detect common-mode errors of the source corpus; an external oracle is required.
 Full philosophical framework: [`Codity.pdf`](Codity.pdf).
 
 ## Citation
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23681952.svg)](https://doi.org/10.5281/zenodo.23681952)
+
 Cite as: **mif4x4** (2026). *nexus-codity: Codity & Shannon-Mirror Lemma*.
 GitHub repository. See [CITATION.cff](CITATION.cff).
-A Zenodo DOI will be added after the repository is linked to Zenodo.
+
+- Concept DOI (always latest): <https://doi.org/10.5281/zenodo.23681952>
+- v1.0.0 (2026-10-27): <https://doi.org/10.5281/zenodo.23681953>
 
 ## Author
 [mif4x4](https://github.com/mif4x4)
