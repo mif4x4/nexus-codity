@@ -1,0 +1,22 @@
+# CITATION.cff — how to cite this repository
+cff-version: 1.2.0
+message: "If you use this framework, please cite it as below."
+title: "nexus-codity: Codity & Shannon-Mirror Lemma"
+authors:
+  - name: mif4x4
+version: 1.0.0
+date-released: "2026-10-27"
+url: "https://github.com/mif4x4/nexus-codity"
+repository-code: "https://github.com/mif4x4/nexus-codity"
+keywords:
+  - codity
+  - shannon-mirror-lemma
+  - rag
+  - verification
+  - knowledge-bases
+abstract: >-
+  Conceptual framework and engineering protocol for Codity — a measure of
+  structural organization, semantic density and programmability of matter —
+  including the Shannon-Mirror Lemma on the limits of cross-verification
+  between derived material projections (common-mode errors require an
+  external oracle).
