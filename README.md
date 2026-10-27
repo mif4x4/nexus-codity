@@ -29,5 +29,18 @@ GitHub repository. See [CITATION.cff](CITATION.cff).
 - Concept DOI (always latest): <https://doi.org/10.5281/zenodo.23681952>
 - v1.0.0 (2026-10-27): <https://doi.org/10.5281/zenodo.23681953>
 
+## License and scope
+
+This repository (protocol description, whitepaper, experimental
+snippets) is released under the [MIT License](LICENSE).
+
+The production verification pipeline, projection builder, and
+customer knowledge bases are proprietary and are not included
+in this repository. The public artifacts demonstrate the
+verification protocol and its stated limits (Shannon-Mirror);
+they do not constitute the commercial implementation.
+
+See also: [DEMO_REPORT.md](DEMO_REPORT.md) — aggregate demo results of the protocol.
+
 ## Author
 [mif4x4](https://github.com/mif4x4)

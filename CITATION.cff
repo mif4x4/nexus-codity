@@ -6,6 +6,7 @@ authors:
   - name: mif4x4
 version: 1.0.0
 date-released: "2026-10-27"
+license: MIT
 url: "https://github.com/mif4x4/nexus-codity"
 repository-code: "https://github.com/mif4x4/nexus-codity"
 doi: "10.5281/zenodo.23681953"

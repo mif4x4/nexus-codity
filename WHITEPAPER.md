@@ -21,5 +21,8 @@ To detect common-mode errors (e.g., "consistent lies" where all layers contain t
 
 **Consequence:** The system honestly accepts a common-mode error as an invariant if all available material projections contain it, strictly adhering to deterministic verification protocols.
 
-## 4. Disclaimer
+## License
+This repository (whitepaper, protocol description, experimental snippets) is released under the **MIT License** (see `LICENSE`). The production verification pipeline, projection builder and customer knowledge bases are proprietary and are **not included** in this repository.
+
+## 5. Disclaimer
 This is a conceptual framework and an engineering heuristic, not a peer-reviewed physical theory. The author makes no claims regarding fundamental quantum gravity or cosmology. The framework is designed for system engineering and software verification.
