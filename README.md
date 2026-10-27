@@ -1,17 +1,13 @@
 # nexus-codity
-Theoretical framework for calculating structural information density (Codity) in high-entropy stochastic environments. 
+Experimental protocol for verifying answers of RAG knowledge bases.
 
 ## Overview
-`nexus-codity` provides an experimental mathematical model for evaluating the topological compression of multi-dimensional data arrays. It is designed to test theoretical limits of entropy reduction before applying deterministic routing algorithms.
+`nexus-codity` describes a protocol that verifies answers produced by a RAG system: several material projections (text, vector, graph) are derived from a single source corpus, and an answer is scored by the number of projections that agree on it. Cross-checking projections detects discrepancies between transformations, but not errors of the source corpus itself; detecting those requires an external oracle not derived from the corpus. The protocol is experimental.
 
-**Status:** Experimental / Academic Research. Not intended for production use.
-
-## Core concepts
-- **Stochastic Entropy Baseline:** Measures the noise floor of a given unparsed dataset.
-- **Topological Density Coefficient (Codity):** Evaluates the remaining structural integrity after simulating a lossy traversal matrix.
+**Status:** Experimental proposal. Not a standard, not peer-reviewed; not intended for production use.
 
 ## Usage
-Currently limited to standalone mathematical simulations.
+Documentation, a small experimental core (`nexus_codity_core.py`), and demo results ([DEMO_REPORT.md](DEMO_REPORT.md)).
 
 ## Whitepaper
 The conceptual foundation — **[WHITEPAPER.md](WHITEPAPER.md)** — defines *Codity*

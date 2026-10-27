@@ -4,11 +4,15 @@
 **Status:** Public demo artifact. Aggregate metrics only — production
 knowledge bases, the projection builder and the bench runner are
 proprietary and **not included** in this repository (see [LICENSE](LICENSE)).
+**Limitations:** 32 negative questions total is a small sample; tests, mutants
+and acceptance thresholds were authored by the author; the results are a
+self-assessment, not an independent audit.
 
 ## 1. What is demonstrated
 
 Application of the Codity verification protocol (WHITEPAPER.md) to three
-knowledge bases (KB) in a read-only QA stand:
+knowledge bases (KB) in a read-only QA stand — 123 questions in total
+(43 + 40 + 40):
 
 | KB | Domain | Projections | Questions | Design |
 |-----|--------|-------------|-----------|--------|
@@ -24,7 +28,8 @@ Fixed rules applied to all three:
   number of projections in which absence of the answer was confirmed;
   a false "golden" label (answer actually present) is scored by the layers
   that contain the answer.
-- **Mutation testing**: 20 mutants per KB, 5 categories:
+- **Mutation testing**: 20 mutants on each of KB-A and KB-B; KB-R used 10 mutants
+  under the same protocol. 5 categories:
   A requirement gap · B projection contradiction · C version drift ·
   D dead meaning (text layers alive, vector/graph layers empty) ·
   E consistent lie (all layers agree, claim violates an external oracle).
@@ -41,7 +46,7 @@ Fixed rules applied to all three:
 | avg codity | **0.755** | **0.774** | **0.680** |
 | Distribution (H/M/L/NO) | 24 / 7 / 12 / 0 | 24 / 8 / 8 / 0 | 14 / 18 / 8 / 0 |
 | Negative tests | **12/12** | **10/10** (+1 false golden label caught) | **10/10** |
-| Mutants caught | 10/10 (per protocol) | **18/20 (90%)** | **18/20 (90%)** |
+| Mutants caught | 10/10 (10 mutants; not comparable with KB-A/KB-B) | **18/20 (90%)** | **18/20 (90%)** |
 | Trap probes (5 types) | 10 organic events (G1–G6) | **5/5** + 10 organic | **5/5** + 12 organic |
 
 ## 3. Verdict against the acceptance criteria
@@ -50,11 +55,14 @@ Fixed rules applied to all three:
 |-----------|-----------|------|------|------|
 | Negative tests | ≥ 95 % | 100 % ✅ | 100 % ✅ | 100 % ✅ |
 | avg codity | 0.65 – 0.85 | 0.755 ✅ | 0.774 ✅ | 0.680 ✅ |
-| Mutants caught | ≥ 80 % | ✅ | 90 % ✅ | 90 % ✅ |
+| Mutants caught | ≥ 80 % | ✅ (10 mutants)* | 90 % ✅ | 90 % ✅ |
 | Trap probes | ≥ 70 % | ✅ | 100 % ✅ | 100 % ✅ |
 | Projections | ≥ 3 | 3 ✅ | 5 ✅ | 3 ✅ |
 
-**Confidence level: HIGH for all three KBs.**
+**All preset acceptance criteria met on the demo set.**
+
+\* The KB-R mutant run used 10 mutants instead of 20; the figure is not
+directly comparable with KB-A/KB-B.
 
 ## 4. Honest limitation (as stated by the Shannon-Mirror Lemma)
 
